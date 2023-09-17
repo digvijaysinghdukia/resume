@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>resume</title>
+	<script src="https://kit.fontawesome.com/b316a50621.js" crossorigin="anonymous"></script>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		body{
+			width: 100vw;
+			height: auto;
+			display: grid;
+			place-items: center;
+			overflow-x: hidden;
+			background-color: #adadad;
+			font-size: large;
+			font-family: 'Comfortaa', cursive;
+			font-weight: 600;
+		}
+		#page{
+			width: 900px;
+			height: 1200px;
+			display: grid;
+			grid-template-columns: 30% 70%;
+			position: relative;
+			overflow: hidden;
+			margin: 100px 0px;
+		}
+		#first-side{
+			background-color: #febf01;
+			place-items: center;
+		}
+		#second-side{
+			background-color: #e9e9e9;
+		}
+		.boxs{
+			position: absolute;
+			background-color: #202020;
+			width: 100px;
+			height: 100px;
+			top: 500px;
+		}
+		.box1{
+			width: 600px;
+			height: 50px;
+			top:10px;
+			left: -228px;
+			transform: rotate(145deg);
+		}
+		.box2{
+			width: 600px;
+			height: 20px;
+			top:80px;
+			left: -228px;
+			transform: rotate(145deg);
+		}
+		.box3{
+			width: 901px;
+			height: 77px;
+			top: 20px;
+			left: -228px;
+			transform: rotate(145deg);
+			}
+		.box4{
+			width: 100px;
+			height: 50px;
+			top: 440px;
+			left: -30px;
+			transform: rotate(0deg) skewX(-40deg);
+			}
+		.box5{
+			width: 100px;
+			height: 50px;
+			top: 520px;
+			left: -30px;
+			transform: rotate(0deg) skewX(-40deg);
+			}
+		.box6{
+			width: 100px;
+			height: 50px;
+			top: 600px;
+			left: -30px;
+			transform: rotate(0deg) skewX(-40deg);
+			}
+		.box7{
+			width: 113px;
+			height: 99px;
+			top: 1073px;
+			left: -58px;
+			transform: rotate(91deg) skewX(40deg);
+			}
+		.box8{
+			width: 23px;
+			height: 117px;
+			top: 1164px;
+			left: -24px;
+			transform: rotate(93deg) skewX(40deg);
+			}
+		.box9{
+			width: 823px;
+			height: 100px;
+			top: 131px;
+			left: -44px;
+			transform: rotate(0deg) skewX(-50deg);
+			background-color: #febf01;
+			}
+		.box10{
+			width: 823px;
+			height: 100px;
+			top: 117px;
+			left: -44px;
+			transform: rotate(0deg) skewX(-50deg);
+			display: grid;
+			place-items: center;
+			color: white;
+			}
+			.box10 div{
+				width: 50%;
+				height: 100%;
+				display: grid;
+				place-items: center;
+				text-align: center;
+				font-size: x-large;
+				transform: rotate(0deg) skewX(50deg);
+				left: 150px;
+	  			position: relative;
+				}
+		}	
+		.box11{
+			width: 603px;
+			height: 24px;
+			top: 1201px;
+			right: -94px;
+			transform: rotate(-37deg) skewX(40deg);
+			}
+		.box12{
+			width: 583px;
+			height: 75px;
+			top: 1062px;
+			right: -116px;
+			transform: rotate(-37deg) skewX(40deg);
+			}
+		.box13{
+			width: 280px;
+		  	height: 128px;
+		  	top: 480px;
+		  	right: -163px;
+		  	transform: rotate(-37deg) skewX(-40deg);
+			}
+		.box14{
+			width: 280px;
+			height: 36px;
+			top: 655px;
+			right: -161px;
+			transform: rotate(-37deg) skewX(-40deg);
+			}
+		#photo{
+			width: 250px;
+			height: 250px;
+			position: absolute;
+			background-color: #202020;
+			transform: rotate(55deg);
+			left: 28px;
+			top: 61px;
+			display: grid;
+			place-items: center;
+			overflow: hidden;
+			}
+		#photo div{
+			display: grid;
+			place-items: center;
+			overflow: hidden;
+			width: 95%;
+			height: 95%;
+		}
+		#photo img{
+			width: 150%;
+  			height: 150%;
+  			transform: rotate(-55deg);
+  			margin: 10px;
+		}
+		#about-me{
+			width: 525px;
+  			height: 200px;
+  			position: relative;
+  			top: 288px;
+  			left: 36px;
+  			overflow: hidden;
+
+		}
+		.deatils{
+			width: 525px;
+  			height: 200px;
+  			position: relative;
+  			top: 288px;
+  			left: 36px;
+  			overflow: hidden;
+  			padding: 20px;
+  			line-height: 30px;
+		}
+		#contact{
+			position: absolute;
+			width: 100px;
+			height: 36px;
+			top: 379px;
+  			left: 70px;
+		}
+		#mobile{
+			position: absolute;
+			width: 250px;
+			height: 36px;
+			top: 455px;
+  			left: 20px;
+		}
+		.i-adject{
+			color: whitesmoke;
+			margin-right: 10px;
+		}
+		.deatils-adject{
+			margin-left: 25px;
+		}
+		#github{
+			position: absolute;
+			width: 250px;
+			height: 36px;
+			top: 537px;
+  			left: 20px;
+		}
+		#insta{
+			position: absolute;
+			width: 250px;
+			height: 36px;
+			top: 618px;
+  			left: 20px;
+		}
+		#skills{
+			position: absolute;
+			width: 100px;
+			height: 36px;
+			top: 710px;
+  			left: 70px;
+  			line-height: 30px;
+		}
+		#skills-list{
+			position: absolute;
+		  	width: 100px;
+		  	height: auto;
+		  	top: 765px;
+		  	left: 50px;
+		  	line-height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<section id="page">
+		<aside id="first-side">
+			<div class="boxs box1"></div>
+			<div class="boxs box2"></div>
+			<div class="boxs box3"></div>
+			<div class="boxs box4"></div>
+			<div class="boxs box5"></div>
+			<div class="boxs box6"></div>
+			<div class="boxs box7"></div>
+			<div class="boxs box8"></div>
+			<div class="boxs box9"></div>
+			<div class="boxs box10">
+				<div>
+					<h1>Digvijay Singh</h1>
+					<span>Web Designer</span>
+				</div>
+			</div>
+			<div class="boxs box12"></div>
+			<div class="boxs box13"></div>
+			<div class="boxs box14"></div>
+			<div id="contact"><h2>CONTACTS</h2></div>
+			<div id="mobile"><i class="fa-solid fa-mobile-screen-button i-adject"></i> <span class="deatils-adject">+918302160041</span></div>
+			<div id="github"><i class="fa-brands fa-github i-adject"></i> <span class="deatils-adject">+918302160041</span></div>
+			<div id="insta"><i class="fa-brands fa-instagram i-adject"></i> <span class="deatils-adject">digvijaysinghdukiya</span></div>
+			<div id="skills"><h2>SKILLS</h2></div>
+			<div id="skills-list">
+				<ul style="list-style-type: disclosure-closed;">
+					<li>HTML</li>
+					<li>Css</li>
+					<li>JavaScript</li>
+				 </ul>
+			</div>
+
+		</aside>
+		<aside id="second-side">
+			<div id="photo">
+				<div><img src="./media/myphoto2.jpeg"></div>
+			</div>
+			<section id="about-me">
+				<h2>ABOUT ME</h2>
+				<p>Writing code is my passion. It doesn't feel like work to me, I enjoy it. I love spending time on it. I like the challenge of taking a design in Photoshop and converting it into web HTML and CSS. I can convert a design made from a photo, graphic or someone's instruction into a web and can also animate it with the help of JavaScript.</p>
+			</section>
+			<section class="deatils">
+				<h2 style="margin: 20px;">EDUCATION</h2>
+				 <ul style="list-style-type: disclosure-closed;">
+					<li>NIELIT CHM-T O Level</li>
+					<li>Bachelor of Arts</li>
+					<li>D.A.V. Public School, Sikar(10+2)</li>
+				 </ul> 
+			</section>
+			<section class="deatils">
+				<h2 style="margin: 20px;">PROJECTS</h2>
+				 <ul style="list-style-type: disclosure-closed;">
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ul> 
+			</section>
+		</aside>
+	</section>
+	<section></section>
+</body>
+</html>
